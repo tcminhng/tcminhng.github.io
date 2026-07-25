@@ -1,0 +1,65 @@
+---
+// Astro Component Script
+---
+
+<html lang="en" class="dark">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Minh Nguyen — Portfolio</title>
+  </head>
+  <body class="bg-slate-900 text-slate-100 font-sans min-h-screen px-6 py-12 max-w-4xl mx-auto">
+    
+    <!-- Hero Section -->
+    <header class="mb-16">
+      <h1 class="text-4xl sm:text-5xl font-bold tracking-tight text-white mb-4">
+        Minh Nguyen
+      </h1>
+      <p class="text-xl text-slate-400 mb-6 leading-relaxed">
+        Machine Learning Engineer building production AI, agentic systems, and end-to-end data pipelines.
+      </p>
+      <div class="flex gap-4 text-sm font-semibold">
+        <a href="mailto:minhbtnguyen.work@gmail.com" class="bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded-md transition">Contact Me</a>
+        <a href="https://github.com/tcminhng" target="_blank" class="border border-slate-700 hover:border-slate-500 text-slate-300 px-4 py-2 rounded-md transition">GitHub</a>
+        <a href="https://linkedin.com/in/minhbtnguyen" target="_blank" class="border border-slate-700 hover:border-slate-500 text-slate-300 px-4 py-2 rounded-md transition">LinkedIn</a>
+      </div>
+    </header>
+
+    <!-- Experience Section -->
+    <section class="mb-16">
+      <h2 class="text-2xl font-bold text-white mb-6 border-b border-slate-800 pb-2">Experience</h2>
+      <div class="space-y-8">
+        <div>
+          <div class="flex justify-between items-baseline mb-1">
+            <h3 class="text-lg font-semibold text-white">Machine Learning Engineer — BlackRock</h3>
+            <span class="text-xs text-slate-500">2024 – Present</span>
+          </div>
+          <p class="text-sm text-slate-400 mb-2">Built and shipped production LLM and agentic systems automating 20,000+ hours of operations.</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-slate-800 text-indigo-400 text-xs px-2.5 py-1 rounded">LangChain</span>
+            <span class="bg-slate-800 text-indigo-400 text-xs px-2.5 py-1 rounded">Python</span>
+            <span class="bg-slate-800 text-indigo-400 text-xs px-2.5 py-1 rounded">Docker</span>
+            <span class="bg-slate-800 text-indigo-400 text-xs px-2.5 py-1 rounded">Kubernetes</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="mb-16">
+      <h2 class="text-2xl font-bold text-white mb-6 border-b border-slate-800 pb-2">Featured Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="p-5 border border-slate-800 rounded-lg bg-slate-800/40 hover:border-slate-700 transition">
+          <h3 class="text-lg font-semibold text-white mb-2">Bring Your Own Bike</h3>
+          <p class="text-sm text-slate-400 mb-4">End-to-end agentic mobility pipeline classifying commute modes and simulating behavioral shifts.</p>
+          <div class="flex gap-2">
+            <span class="bg-slate-800 text-xs text-slate-300 px-2 py-0.5 rounded">Python</span>
+            <span class="bg-slate-800 text-xs text-slate-300 px-2 py-0.5 rounded">Streamlit</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </body>
+</html>
