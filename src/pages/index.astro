@@ -1,160 +1,189 @@
 ---
-// Minh Nguyen - Software Engineering Portfolio
+// Minh Nguyen - Software & IoT Portfolio
 ---
 
-<html lang="en" class="dark">
+<html lang="en" class="dark scroll-smooth">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Minh Nguyen — Software & IoT Engineer</title>
+
+    <!-- Google Fonts for better typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      h1, h2, h3, .font-heading {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+      }
+    </style>
   </head>
-  <body class="bg-slate-900 text-slate-100 font-sans min-h-screen px-6 py-12 max-w-4xl mx-auto">
+  <body class="bg-slate-950 text-slate-200 min-h-screen px-4 py-10 sm:px-8 max-w-5xl mx-auto selection:bg-indigo-500 selection:text-white">
     
-    <!-- Hero Section -->
-    <header class="mb-16">
-      <h1 class="text-4xl sm:text-5xl font-bold tracking-tight text-white mb-4">
-        Minh T.C. Nguyen
+    <!-- 1. INTRODUCTION / HERO SECTION -->
+    <header class="mb-16 relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-900/90 to-indigo-950/40 border border-slate-800 rounded-3xl p-8 sm:p-10 shadow-2xl">
+      <!-- Top Color Accent Bar -->
+      <div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-indigo-500 via-purple-500 to-cyan-400"></div>
+
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold mb-6">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        Computer Science @ Arizona State University
+      </div>
+
+      <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight mb-4">
+        Hi, I'm <span class="bg-gradient-to-r from-indigo-400 via-purple-300 to-cyan-400 bg-clip-text text-transparent">Minh Nguyen</span> 👋
       </h1>
-      <p class="text-xl text-slate-300 font-medium mb-3">
-        Computer Science (Software Engineering) Student @ Arizona State University
+
+      <p class="text-lg sm:text-xl text-slate-300 font-medium mb-4 leading-relaxed max-w-3xl">
+        I design & build end-to-end <span class="text-indigo-400 font-semibold">IoT systems</span>, <span class="text-cyan-400 font-semibold">embedded hardware</span>, and real-time <span class="text-purple-400 font-semibold">AI/Computer Vision applications</span>.
       </p>
-      <p class="text-base text-slate-400 mb-6 leading-relaxed">
-        Passionate about building end-to-end IoT systems, embedded electronics, real-time AI computer vision models, and full-stack software applications.
+
+      <p class="text-sm sm:text-base text-slate-400 mb-8 max-w-2xl leading-relaxed">
+        Currently pursuing my B.S. in Computer Science (Software Engineering) at ASU. Driven by solving accessibility and real-time monitoring challenges with smart electronics and software.
       </p>
+
       <div class="flex flex-wrap gap-3 text-sm font-semibold">
-        <a href="mailto:tnguy476@asu.edu" class="bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded-md transition">Email Me</a>
-        <a href="https://github.com/tcminhng" target="_blank" class="border border-slate-700 hover:border-slate-500 text-slate-300 px-4 py-2 rounded-md transition">GitHub</a>
-        <a href="https://linkedin.com/in/minhtcnguyen" target="_blank" class="border border-slate-700 hover:border-slate-500 text-slate-300 px-4 py-2 rounded-md transition">LinkedIn</a>
+        <a href="mailto:tnguy476@asu.edu" class="bg-indigo-600 hover:bg-indigo-500 text-white px-5 py-2.5 rounded-xl transition shadow-lg shadow-indigo-600/25 flex items-center gap-2">
+          📧 Email Me
+        </a>
+        <a href="https://github.com/tcminhng" target="_blank" class="bg-slate-800/80 hover:bg-slate-700 border border-slate-700 hover:border-slate-500 text-slate-200 px-5 py-2.5 rounded-xl transition flex items-center gap-2">
+          💻 GitHub
+        </a>
+        <a href="https://linkedin.com/in/minhtcnguyen" target="_blank" class="bg-slate-800/80 hover:bg-slate-700 border border-slate-700 hover:border-slate-500 text-slate-200 px-5 py-2.5 rounded-xl transition flex items-center gap-2">
+          🔗 LinkedIn
+        </a>
       </div>
     </header>
 
-    <!-- Education Section -->
+    <!-- 2. FEATURED PROJECTS -->
     <section class="mb-16">
-      <h2 class="text-2xl font-bold text-white mb-6 border-b border-slate-800 pb-2">Education</h2>
-      <div class="space-y-6">
-        <div>
-          <div class="flex justify-between items-baseline mb-1">
-            <h3 class="text-lg font-semibold text-white">Arizona State University</h3>
-            <span class="text-xs text-slate-500">Expected Dec 2030</span>
-          </div>
-          <p class="text-sm text-slate-400">B.S. Computer Science (Software Engineering)</p>
-        </div>
-        <div>
-          <div class="flex justify-between items-baseline mb-1">
-            <h3 class="text-lg font-semibold text-white">Seneca Polytechnic</h3>
-            <span class="text-xs text-slate-500">Toronto, ON</span>
-          </div>
-          <p class="text-sm text-slate-400">Associate Degree in Computer Engineering Technology</p>
-        </div>
+      <div class="flex items-center gap-3 mb-8">
+        <h2 class="text-2xl sm:text-3xl font-bold text-white">Featured Projects</h2>
+        <div class="h-px bg-slate-800 flex-1"></div>
       </div>
-    </section>
 
-    <!-- Featured Projects Section -->
-    <section class="mb-16">
-      <h2 class="text-2xl font-bold text-white mb-6 border-b border-slate-800 pb-2">Featured Projects</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         
         <!-- Smart Hydration & Break Reminder Device -->
-        <div class="p-6 border border-indigo-500/30 rounded-xl bg-slate-800/60 hover:border-indigo-500/60 transition shadow-lg">
-          <div class="flex justify-between items-start mb-2">
-            <h3 class="text-xl font-bold text-white">Smart Hydration & Break Reminder Device</h3>
-            <span class="text-xs text-slate-400 border border-slate-700 px-2 py-0.5 rounded">Capstone</span>
+        <div class="group relative bg-gradient-to-b from-slate-900 to-slate-900/60 border border-indigo-500/30 hover:border-indigo-500/70 rounded-2xl p-6 transition duration-300 shadow-xl hover:shadow-indigo-500/10 flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-start mb-2">
+              <span class="text-xs font-mono font-semibold px-2.5 py-1 rounded-md bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">
+                Capstone Project
+              </span>
+              <span class="text-xs text-slate-500">Jul 2025 – Dec 2025</span>
+            </div>
+            <h3 class="text-xl font-bold text-white group-hover:text-indigo-300 transition mb-3">
+              Smart Hydration & Break Reminder Device
+            </h3>
+            <p class="text-sm text-slate-300 mb-6 leading-relaxed">
+              Cloud-connected IoT system built with ESP32-S3 and Firebase for real-time data logging and 7-day analytics. Designed a proprietary Calculated Break Time (CBT) algorithm synthesizing BME280 environmental data and MPU6050 motion sensor data to automate posture and hydration alerts.
+            </p>
           </div>
-          <p class="text-xs text-indigo-400 mb-3 font-mono">July 2025 – Dec 2025</p>
-          <p class="text-sm text-slate-300 mb-4 leading-relaxed">
-            Cloud-connected IoT system built with ESP32-S3 and Firebase for real-time data logging and 7-day analytics. Designed a proprietary Calculated Break Time (CBT) algorithm synthesizing BME280 environmental data and MPU6050 motion sensor data to automate posture and hydration alerts.
-          </p>
-          <div class="flex flex-wrap gap-2">
-            <span class="bg-slate-900 text-xs text-indigo-300 px-2.5 py-1 rounded">ESP32-S3</span>
-            <span class="bg-slate-900 text-xs text-indigo-300 px-2.5 py-1 rounded">Firebase</span>
-            <span class="bg-slate-900 text-xs text-indigo-300 px-2.5 py-1 rounded">C++ / Embedded</span>
-            <span class="bg-slate-900 text-xs text-indigo-300 px-2.5 py-1 rounded">Ultrasonic Sensors</span>
+          <div class="flex flex-wrap gap-2 pt-4 border-t border-slate-800">
+            <span class="bg-slate-800/80 text-xs font-medium text-indigo-300 px-2.5 py-1 rounded-lg">ESP32-S3</span>
+            <span class="bg-slate-800/80 text-xs font-medium text-amber-300 px-2.5 py-1 rounded-lg">Firebase</span>
+            <span class="bg-slate-800/80 text-xs font-medium text-cyan-300 px-2.5 py-1 rounded-lg">C++ / Embedded</span>
+            <span class="bg-slate-800/80 text-xs font-medium text-purple-300 px-2.5 py-1 rounded-lg">Ultrasonic Sensors</span>
           </div>
         </div>
 
         <!-- BUNO (Blind UNO) -->
-        <div class="p-6 border border-indigo-500/30 rounded-xl bg-slate-800/60 hover:border-indigo-500/60 transition shadow-lg">
-          <div class="flex justify-between items-start mb-2">
-            <h3 class="text-xl font-bold text-white">BUNO (Blind UNO)</h3>
-            <span class="text-xs text-slate-400 border border-slate-700 px-2 py-0.5 rounded">FSE100 Master</span>
+        <div class="group relative bg-gradient-to-b from-slate-900 to-slate-900/60 border border-purple-500/30 hover:border-purple-500/70 rounded-2xl p-6 transition duration-300 shadow-xl hover:shadow-purple-500/10 flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-start mb-2">
+              <span class="text-xs font-mono font-semibold px-2.5 py-1 rounded-md bg-purple-500/10 text-purple-400 border border-purple-500/20">
+                FSE100 Master Project
+              </span>
+              <span class="text-xs text-slate-500">Feb 2026 – Apr 2026</span>
+            </div>
+            <h3 class="text-xl font-bold text-white group-hover:text-purple-300 transition mb-3">
+              BUNO (Blind UNO) — AI Accessibility Device
+            </h3>
+            <p class="text-sm text-slate-300 mb-6 leading-relaxed">
+              AI-powered accessibility device built on Raspberry Pi 4. End-to-end vision inference pipeline using OpenAI APIs to classify UNO cards in real-time with 98% accuracy. Features a single-button interface, sub-1-second response time, haptic feedback, and Bluetooth audio cues.
+            </p>
           </div>
-          <p class="text-xs text-indigo-400 mb-3 font-mono">Feb 2026 – Apr 2026</p>
-          <p class="text-sm text-slate-300 mb-4 leading-relaxed">
-            AI-powered accessibility device built on Raspberry Pi 4. End-to-end vision inference pipeline using OpenAI APIs to classify UNO cards in real-time with 98% accuracy. Features a single-button interface, sub-1-second response time, haptic feedback, and Bluetooth audio cues.
-          </p>
-          <div class="flex flex-wrap gap-2">
-            <span class="bg-slate-900 text-xs text-indigo-300 px-2.5 py-1 rounded">Raspberry Pi 4</span>
-            <span class="bg-slate-900 text-xs text-indigo-300 px-2.5 py-1 rounded">Python</span>
-            <span class="bg-slate-900 text-xs text-indigo-300 px-2.5 py-1 rounded">GPT Vision API</span>
-            <span class="bg-slate-900 text-xs text-indigo-300 px-2.5 py-1 rounded">Accessibility AI</span>
-          </div>
-        </div>
-
-        <!-- Finance Document Extraction Tool -->
-        <div class="p-5 border border-slate-800 rounded-lg bg-slate-800/30 hover:border-slate-700 transition">
-          <h3 class="text-lg font-semibold text-white mb-1">Finance Document Extraction Tool</h3>
-          <p class="text-xs text-slate-500 mb-3">May 2026 – July 2026</p>
-          <p class="text-sm text-slate-400 mb-4">Extracted invoice fields from PDFs using Python and Azure Document Intelligence, matching invoices to payment records in SQLite via Streamlit.</p>
-          <div class="flex flex-wrap gap-2">
-            <span class="bg-slate-900 text-xs text-slate-300 px-2 py-0.5 rounded">Python</span>
-            <span class="bg-slate-900 text-xs text-slate-300 px-2 py-0.5 rounded">Azure Doc Intel</span>
-            <span class="bg-slate-900 text-xs text-slate-300 px-2 py-0.5 rounded">Streamlit</span>
-          </div>
-        </div>
-
-        <!-- LLM-as-a-Judge Evaluation Framework -->
-        <div class="p-5 border border-slate-800 rounded-lg bg-slate-800/30 hover:border-slate-700 transition">
-          <h3 class="text-lg font-semibold text-white mb-1">LLM-as-a-Judge Evaluation Framework</h3>
-          <p class="text-xs text-slate-500 mb-3">May 2026 – July 2026</p>
-          <p class="text-sm text-slate-400 mb-4">Created a benchmark of 200 prompts across GSM8K and custom tasks using Kimi API to score correctness, relevance, and clarity.</p>
-          <div class="flex flex-wrap gap-2">
-            <span class="bg-slate-900 text-xs text-slate-300 px-2 py-0.5 rounded">Python</span>
-            <span class="bg-slate-900 text-xs text-slate-300 px-2 py-0.5 rounded">LLM Benchmarking</span>
-            <span class="bg-slate-900 text-xs text-slate-300 px-2 py-0.5 rounded">Prompt Engineering</span>
+          <div class="flex flex-wrap gap-2 pt-4 border-t border-slate-800">
+            <span class="bg-slate-800/80 text-xs font-medium text-purple-300 px-2.5 py-1 rounded-lg">Raspberry Pi 4</span>
+            <span class="bg-slate-800/80 text-xs font-medium text-emerald-300 px-2.5 py-1 rounded-lg">Python</span>
+            <span class="bg-slate-800/80 text-xs font-medium text-cyan-300 px-2.5 py-1 rounded-lg">GPT Vision API</span>
+            <span class="bg-slate-800/80 text-xs font-medium text-pink-300 px-2.5 py-1 rounded-lg">Accessibility AI</span>
           </div>
         </div>
 
       </div>
     </section>
 
-    <!-- Work Experience Section -->
+    <!-- 3. WORK EXPERIENCE -->
     <section class="mb-16">
-      <h2 class="text-2xl font-bold text-white mb-6 border-b border-slate-800 pb-2">Work Experience</h2>
-      <div class="space-y-8">
-        <div>
-          <div class="flex justify-between items-baseline mb-1">
-            <h3 class="text-lg font-semibold text-white">Software Development Intern — FPT Information System</h3>
-            <span class="text-xs text-slate-500">May 2026 – Aug 2026</span>
-          </div>
-          <p class="text-sm text-slate-400 mb-3">
-            Collaborated within an Agile team to optimize secure RESTful APIs using Java and Python, designed relational database schemas with SQL query optimization, and integrated legacy frameworks with modern cloud infrastructure.
-          </p>
-          <div class="flex flex-wrap gap-2">
-            <span class="bg-slate-800 text-indigo-400 text-xs px-2.5 py-1 rounded">Java</span>
-            <span class="bg-slate-800 text-indigo-400 text-xs px-2.5 py-1 rounded">Python</span>
-            <span class="bg-slate-800 text-indigo-400 text-xs px-2.5 py-1 rounded">REST APIs</span>
-            <span class="bg-slate-800 text-indigo-400 text-xs px-2.5 py-1 rounded">SQL</span>
-          </div>
+      <div class="flex items-center gap-3 mb-8">
+        <h2 class="text-2xl sm:text-3xl font-bold text-white">Work Experience</h2>
+        <div class="h-px bg-slate-800 flex-1"></div>
+      </div>
+
+      <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-6 hover:border-slate-700 transition">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-3">
+          <h3 class="text-lg font-bold text-white">Software Development Intern — <span class="text-indigo-400">FPT Information System</span></h3>
+          <span class="text-xs font-mono text-slate-400">May 2026 – Aug 2026</span>
+        </div>
+        <p class="text-sm text-slate-300 mb-4 leading-relaxed">
+          Collaborated within an Agile team to optimize secure RESTful APIs using Java and Python, improving data ingestion speed. Designed relational database schemas with SQL query optimization and connected legacy business frameworks with modern cloud infrastructure.
+        </p>
+        <div class="flex flex-wrap gap-2">
+          <span class="bg-slate-800 text-slate-300 text-xs px-2.5 py-1 rounded-md border border-slate-700">Java</span>
+          <span class="bg-slate-800 text-slate-300 text-xs px-2.5 py-1 rounded-md border border-slate-700">Python</span>
+          <span class="bg-slate-800 text-slate-300 text-xs px-2.5 py-1 rounded-md border border-slate-700">REST APIs</span>
+          <span class="bg-slate-800 text-slate-300 text-xs px-2.5 py-1 rounded-md border border-slate-700">SQL Optimization</span>
         </div>
       </div>
     </section>
 
-    <!-- Technical Skills Section -->
+    <!-- 4. EDUCATION -->
     <section class="mb-16">
-      <h2 class="text-2xl font-bold text-white mb-6 border-b border-slate-800 pb-2">Technical Skills</h2>
-      <div class="space-y-4 text-sm">
-        <div>
-          <span class="text-slate-200 font-semibold block mb-1">Languages:</span>
-          <p class="text-slate-400">Python, C++/C, Java, JavaScript, HTML/CSS, SQL</p>
+      <div class="flex items-center gap-3 mb-8">
+        <h2 class="text-2xl sm:text-3xl font-bold text-white">Education</h2>
+        <div class="h-px bg-slate-800 flex-1"></div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="bg-slate-900/60 border border-slate-800/80 p-5 rounded-xl">
+          <h3 class="text-base font-bold text-white">Arizona State University</h3>
+          <p class="text-sm text-indigo-400 font-medium">B.S. Computer Science (Software Engineering)</p>
+          <p class="text-xs text-slate-500 mt-2">Expected Graduation: Dec 2030</p>
         </div>
-        <div>
-          <span class="text-slate-200 font-semibold block mb-1">Tools & Frameworks:</span>
-          <p class="text-slate-400">Git/GitHub, OpenAI API, Pandas, Plotly, Spring Boot, SQLite, Firebase, Streamlit</p>
+        <div class="bg-slate-900/60 border border-slate-800/80 p-5 rounded-xl">
+          <h3 class="text-base font-bold text-white">Seneca Polytechnic</h3>
+          <p class="text-sm text-cyan-400 font-medium">Computer Engineering Technology (Associate Degree)</p>
+          <p class="text-xs text-slate-500 mt-2">Toronto, ON</p>
         </div>
+      </div>
+    </section>
+
+    <!-- 5. TECHNICAL SKILLS -->
+    <section class="mb-16">
+      <div class="flex items-center gap-3 mb-8">
+        <h2 class="text-2xl sm:text-3xl font-bold text-white">Technical Skills</h2>
+        <div class="h-px bg-slate-800 flex-1"></div>
+      </div>
+
+      <div class="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 space-y-4 text-sm">
         <div>
-          <span class="text-slate-200 font-semibold block mb-1">Electronics & Hardware:</span>
-          <p class="text-slate-400">Raspberry Pi 4, ESP32, 3D Printing, PCB Design, Fusion 360, AutoCAD, TinkerCAD, Arduino</p>
+          <span class="text-xs font-semibold text-indigo-400 uppercase tracking-wider block mb-2">Languages</span>
+          <p class="text-slate-300 font-mono">Python, C++/C, Java, JavaScript, HTML/CSS, SQL</p>
+        </div>
+        <div class="border-t border-slate-800/80 pt-3">
+          <span class="text-xs font-semibold text-purple-400 uppercase tracking-wider block mb-2">Tools & Frameworks</span>
+          <p class="text-slate-300 font-mono">Git/GitHub, OpenAI API, Pandas, Plotly, Spring Boot, SQLite, Firebase, Streamlit</p>
+        </div>
+        <div class="border-t border-slate-800/80 pt-3">
+          <span class="text-xs font-semibold text-cyan-400 uppercase tracking-wider block mb-2">Electronics & Hardware</span>
+          <p class="text-slate-300 font-mono">Raspberry Pi 4, ESP32, 3D Printing, PCB Design, Fusion 360, AutoCAD, TinkerCAD, Arduino</p>
         </div>
       </div>
     </section>
