@@ -12,7 +12,7 @@
     <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <style>
       body {
@@ -20,128 +20,156 @@
       }
     </style>
   </head>
-  <body class="bg-slate-950 text-slate-300 antialiased min-h-screen px-6 py-12 max-w-3xl mx-auto leading-relaxed">
+  <body class="bg-slate-950 text-slate-300 antialiased min-h-screen selection:bg-indigo-500 selection:text-white">
     
-    <!-- HEADER / INTRODUCTION -->
-    <header class="mb-14">
-      <h1 class="text-3xl sm:text-4xl font-bold text-white tracking-tight mb-2">
-        Minh T.C. Nguyen
-      </h1>
-      <p class="text-lg text-slate-400 font-medium mb-6">
-        Computer Science Student at Arizona State University
-      </p>
+    <div class="max-w-6xl mx-auto px-6 py-12 lg:py-20 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
       
-      <p class="text-slate-300 mb-6 leading-relaxed">
-        Hi! I'm a software and IoT engineer passionate about building end-to-end hardware systems, embedded devices, and real-time computer vision applications. I focus on creating practical solutions for accessibility and real-time environment monitoring.
-      </p>
+      <!-- LEFT SIDEBAR (Sticky on Desktop) -->
+      <header class="lg:col-span-5 lg:sticky lg:top-20 lg:h-[calc(100vh-10rem)] flex flex-col justify-between">
+        <div>
+          <h1 class="text-4xl sm:text-5xl font-bold text-white tracking-tight mb-2">
+            Minh Nguyen
+          </h1>
+          <p class="text-lg font-medium text-indigo-400 mb-6">
+            Computer Science Student @ ASU
+          </p>
+          <p class="text-sm text-slate-400 leading-relaxed mb-8 max-w-sm">
+            Building end-to-end IoT devices, embedded systems, and computer vision AI applications. Focused on accessibility and real-time environment monitoring.
+          </p>
 
-      <div class="flex flex-wrap gap-4 text-sm font-medium text-slate-400">
-        <a href="mailto:tnguy476@asu.edu" class="text-slate-200 hover:text-white underline underline-offset-4 transition">Email</a>
-        <span>·</span>
-        <a href="https://github.com/tcminhng" target="_blank" class="text-slate-200 hover:text-white underline underline-offset-4 transition">GitHub</a>
-        <span>·</span>
-        <a href="https://linkedin.com/in/minhtcnguyen" target="_blank" class="text-slate-200 hover:text-white underline underline-offset-4 transition">LinkedIn</a>
-      </div>
-    </header>
+          <!-- Navigation Links -->
+          <nav class="hidden lg:block space-y-3 text-sm font-medium text-slate-400">
+            <div><a href="#about" class="hover:text-white transition">01. About</a></div>
+            <div><a href="#projects" class="hover:text-white transition">02. Featured Projects</a></div>
+            <div><a href="#experience" class="hover:text-white transition">03. Experience</a></div>
+            <div><a href="#education" class="hover:text-white transition">04. Education</a></div>
+            <div><a href="#skills" class="hover:text-white transition">05. Technical Skills</a></div>
+          </nav>
+        </div>
 
-    <hr class="border-slate-800 mb-12" />
+        <!-- Social & Contact Links -->
+        <div class="flex items-center gap-4 text-sm font-medium pt-8 lg:pt-0">
+          <a href="mailto:tnguy476@asu.edu" class="text-slate-300 hover:text-white transition">Email</a>
+          <span class="text-slate-700">/</span>
+          <a href="https://github.com/tcminhng" target="_blank" class="text-slate-300 hover:text-white transition">GitHub</a>
+          <span class="text-slate-700">/</span>
+          <a href="https://linkedin.com/in/minhtcnguyen" target="_blank" class="text-slate-300 hover:text-white transition">LinkedIn</a>
+        </div>
+      </header>
 
-    <!-- FEATURED PROJECTS -->
-    <section class="mb-14">
-      <h2 class="text-xl font-bold text-white mb-6">Featured Projects</h2>
-
-      <div class="space-y-8">
+      <!-- RIGHT CONTENT AREA -->
+      <main class="lg:col-span-7 space-y-16">
         
-        <!-- Smart Hydration & Break Reminder Device -->
-        <div class="space-y-2">
-          <div class="flex justify-between items-baseline flex-wrap gap-1">
-            <h3 class="text-base font-semibold text-white">Smart Hydration & Break Reminder Device</h3>
-            <span class="text-xs text-slate-500">Jul 2025 – Dec 2025</span>
-          </div>
-          <p class="text-xs text-slate-400 font-mono">TPJ655 Capstone Project</p>
-          <p class="text-sm text-slate-300 leading-relaxed">
-            Built a cloud-connected IoT system using an ESP32-S3 and Firebase for real-time data logging and 7-day analytics. Developed a proprietary Calculated Break Time (CBT) algorithm that synthesizes environmental data from a BME280 sensor and motion data from an MPU6050 to automate posture and hydration alerts.
+        <!-- ABOUT -->
+        <section id="about" class="space-y-4">
+          <h2 class="text-xs font-semibold uppercase tracking-widest text-slate-500 lg:hidden">About</h2>
+          <p class="text-slate-300 leading-relaxed">
+            I am a Computer Science student (Software Engineering) at Arizona State University with a background in Computer Engineering Technology from Seneca Polytechnic.
           </p>
-          <div class="flex flex-wrap gap-2 pt-1 text-xs text-slate-400 font-mono">
-            <span>ESP32-S3</span> · <span>Firebase</span> · <span>C++ / Embedded</span> · <span>Ultrasonic Sensing</span>
-          </div>
-        </div>
-
-        <!-- BUNO (Blind UNO) -->
-        <div class="space-y-2">
-          <div class="flex justify-between items-baseline flex-wrap gap-1">
-            <h3 class="text-base font-semibold text-white">BUNO (Blind UNO) — AI Accessibility Device</h3>
-            <span class="text-xs text-slate-500">Feb 2026 – Apr 2026</span>
-          </div>
-          <p class="text-xs text-slate-400 font-mono">FSE100 Master Project</p>
-          <p class="text-sm text-slate-300 leading-relaxed">
-            Developed an AI-powered accessibility device on a Raspberry Pi 4. Created an end-to-end vision inference pipeline integrating OpenAI's vision model via REST API to classify UNO cards in real-time with 98% accuracy. Designed with a single-button interface, sub-1-second response time, haptic feedback, and Bluetooth audio cues.
+          <p class="text-slate-300 leading-relaxed">
+            My work focuses on bridging physical hardware with intelligent software — from developing real-time AI accessibility devices on Raspberry Pi to designing custom algorithms on low-power microcontrollers.
           </p>
-          <div class="flex flex-wrap gap-2 pt-1 text-xs text-slate-400 font-mono">
-            <span>Raspberry Pi 4</span> · <span>Python</span> · <span>GPT Vision API</span> · <span>Accessibility AI</span>
+        </section>
+
+        <!-- FEATURED PROJECTS -->
+        <section id="projects" class="space-y-8">
+          <h2 class="text-xs font-semibold uppercase tracking-widest text-slate-500">Featured Projects</h2>
+
+          <!-- Project 1: Smart Hydration -->
+          <div class="group border border-slate-800/80 hover:border-slate-700 bg-slate-900/40 p-6 rounded-xl transition">
+            <div class="flex justify-between items-baseline mb-2">
+              <h3 class="text-lg font-bold text-white group-hover:text-indigo-400 transition">
+                Smart Hydration & Break Reminder
+              </h3>
+              <span class="text-xs font-mono text-slate-500">Jul – Dec 2025</span>
+            </div>
+            <p class="text-xs text-indigo-400 font-mono mb-3">TPJ655 Capstone Project</p>
+            <p class="text-sm text-slate-400 mb-4 leading-relaxed">
+              Cloud-connected IoT system built with ESP32-S3 and Firebase for real-time data logging and 7-day analytics. Developed a proprietary Calculated Break Time (CBT) algorithm synthesizing BME280 environmental data and MPU6050 motion sensor data to automate posture and hydration alerts.
+            </p>
+            <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-300">
+              <span class="bg-slate-800 px-2.5 py-1 rounded">ESP32-S3</span>
+              <span class="bg-slate-800 px-2.5 py-1 rounded">Firebase</span>
+              <span class="bg-slate-800 px-2.5 py-1 rounded">C++ / Embedded</span>
+              <span class="bg-slate-800 px-2.5 py-1 rounded">Sensors</span>
+            </div>
           </div>
-        </div>
 
-      </div>
-    </section>
-
-    <hr class="border-slate-800 mb-12" />
-
-    <!-- WORK EXPERIENCE -->
-    <section class="mb-14">
-      <h2 class="text-xl font-bold text-white mb-6">Work Experience</h2>
-
-      <div class="space-y-2">
-        <div class="flex justify-between items-baseline flex-wrap gap-1">
-          <h3 class="text-base font-semibold text-white">Software Development Intern</h3>
-          <span class="text-xs text-slate-500">May 2026 – Aug 2026</span>
-        </div>
-        <p class="text-sm text-slate-400 font-medium">FPT Information System (Vietnam)</p>
-        <ul class="list-disc list-inside text-sm text-slate-300 space-y-1 mt-2">
-          <li>Collaborated in an Agile team to build and optimize secure RESTful APIs using Java and Python.</li>
-          <li>Designed relational database schemas and optimized SQL queries to reduce backend latency.</li>
-          <li>Integrated legacy business frameworks with modern cloud infrastructure.</li>
-        </ul>
-      </div>
-    </section>
-
-    <hr class="border-slate-800 mb-12" />
-
-    <!-- EDUCATION -->
-    <section class="mb-14">
-      <h2 class="text-xl font-bold text-white mb-6">Education</h2>
-
-      <div class="space-y-6">
-        <div>
-          <div class="flex justify-between items-baseline flex-wrap gap-1">
-            <h3 class="text-base font-semibold text-white">Arizona State University</h3>
-            <span class="text-xs text-slate-500">Expected Dec 2030</span>
+          <!-- Project 2: BUNO -->
+          <div class="group border border-slate-800/80 hover:border-slate-700 bg-slate-900/40 p-6 rounded-xl transition">
+            <div class="flex justify-between items-baseline mb-2">
+              <h3 class="text-lg font-bold text-white group-hover:text-indigo-400 transition">
+                BUNO (Blind UNO) — AI Accessibility Device
+              </h3>
+              <span class="text-xs font-mono text-slate-500">Feb – Apr 2026</span>
+            </div>
+            <p class="text-xs text-indigo-400 font-mono mb-3">FSE100 Master Project</p>
+            <p class="text-sm text-slate-400 mb-4 leading-relaxed">
+              AI-powered accessibility device built on Raspberry Pi 4. Built an end-to-end vision inference pipeline using OpenAI APIs to classify UNO cards in real-time with 98% accuracy. Features a single-button interface, sub-1-second response time, haptic feedback, and Bluetooth audio cues.
+            </p>
+            <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-300">
+              <span class="bg-slate-800 px-2.5 py-1 rounded">Raspberry Pi 4</span>
+              <span class="bg-slate-800 px-2.5 py-1 rounded">Python</span>
+              <span class="bg-slate-800 px-2.5 py-1 rounded">GPT Vision API</span>
+              <span class="bg-slate-800 px-2.5 py-1 rounded">Accessibility AI</span>
+            </div>
           </div>
-          <p class="text-sm text-slate-400">B.S. Computer Science (Software Engineering)</p>
-        </div>
+        </section>
 
-        <div>
-          <div class="flex justify-between items-baseline flex-wrap gap-1">
-            <h3 class="text-base font-semibold text-white">Seneca Polytechnic</h3>
-            <span class="text-xs text-slate-500">Toronto, ON</span>
+        <!-- EXPERIENCE -->
+        <section id="experience" class="space-y-6">
+          <h2 class="text-xs font-semibold uppercase tracking-widest text-slate-500">Work Experience</h2>
+
+          <div class="border-l-2 border-slate-800 pl-4 space-y-2">
+            <div class="flex justify-between items-baseline">
+              <h3 class="text-base font-bold text-white">Software Development Intern</h3>
+              <span class="text-xs font-mono text-slate-500">May – Aug 2026</span>
+            </div>
+            <p class="text-xs text-indigo-400 font-medium">FPT Information System (Vietnam)</p>
+            <ul class="list-disc list-inside text-sm text-slate-400 space-y-1 pt-1">
+              <li>Optimized RESTful APIs in Java & Python, improving data ingestion speed.</li>
+              <li>Designed relational database schemas and optimized SQL queries to reduce backend latency.</li>
+              <li>Integrated legacy systems with cloud infrastructure for digital transformation.</li>
+            </ul>
           </div>
-          <p class="text-sm text-slate-400">Computer Engineering Technology (Associate Degree)</p>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <hr class="border-slate-800 mb-12" />
+        <!-- EDUCATION -->
+        <section id="education" class="space-y-6">
+          <h2 class="text-xs font-semibold uppercase tracking-widest text-slate-500">Education</h2>
 
-    <!-- SKILLS -->
-    <section class="mb-12">
-      <h2 class="text-xl font-bold text-white mb-6">Technical Skills</h2>
+          <div class="space-y-4">
+            <div>
+              <div class="flex justify-between items-baseline">
+                <h3 class="text-base font-bold text-white">Arizona State University</h3>
+                <span class="text-xs font-mono text-slate-500">Expected Dec 2030</span>
+              </div>
+              <p class="text-sm text-slate-400">B.S. Computer Science (Software Engineering)</p>
+            </div>
+            <div>
+              <div class="flex justify-between items-baseline">
+                <h3 class="text-base font-bold text-white">Seneca Polytechnic</h3>
+                <span class="text-xs font-mono text-slate-500">Toronto, ON</span>
+              </div>
+              <p class="text-sm text-slate-400">Computer Engineering Technology (Associate Degree)</p>
+            </div>
+          </div>
+        </section>
 
-      <div class="space-y-3 text-sm">
-        <p><strong class="text-slate-200">Languages:</strong> Python, C++/C, Java, JavaScript, HTML/CSS, SQL</p>
-        <p><strong class="text-slate-200">Tools:</strong> Git/GitHub, OpenAI API, Pandas, Plotly, Spring Boot, SQLite, Firebase, Streamlit</p>
-        <p><strong class="text-slate-200">Electronics:</strong> Raspberry Pi 4, ESP32, 3D Printing, PCB Design, Fusion 360, AutoCAD, TinkerCAD, Arduino</p>
-      </div>
-    </section>
+        <!-- TECHNICAL SKILLS -->
+        <section id="skills" class="space-y-4">
+          <h2 class="text-xs font-semibold uppercase tracking-widest text-slate-500">Technical Skills</h2>
+
+          <div class="space-y-3 text-sm text-slate-300 border border-slate-800/80 p-5 rounded-xl bg-slate-900/30">
+            <p><strong class="text-white">Languages:</strong> Python, C++/C, Java, JavaScript, HTML/CSS, SQL</p>
+            <p><strong class="text-white">Tools:</strong> Git/GitHub, OpenAI API, Pandas, Plotly, Spring Boot, SQLite, Firebase, Streamlit</p>
+            <p><strong class="text-white">Electronics:</strong> Raspberry Pi 4, ESP32, 3D Printing, PCB Design, Fusion 360, AutoCAD, TinkerCAD, Arduino</p>
+          </div>
+        </section>
+
+      </main>
+
+    </div>
 
   </body>
 </html>
