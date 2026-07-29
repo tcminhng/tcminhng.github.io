@@ -3,88 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Minh Nguyen | Software Engineer</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            line-height: 1.6;
-            color: #222;
-        }
-
-        h1 {
-            font-size: 48px;
-            margin-bottom: 10px;
-        }
-
-        .subtitle {
-            font-size: 22px;
-            color: #555;
-        }
-
-        section {
-            margin-top: 60px;
-        }
-
-        a {
-            color: #0066cc;
-        }
-    </style>
+    <meta name="description" content="Minh Nguyen's software developer portfolio, featuring full-stack, AI, and embedded systems projects.">
+    <title>Minh Nguyen | Software Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
-
 <body>
-    <header>
-        <h1>Hi, I'm Minh Nguyen.</h1>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
-        <p class="subtitle">
-            Software engineer interested in full-stack development,
-            artificial intelligence, and embedded systems.
-        </p>
+    <!-- Site navigation -->
+    <header class="site-header" id="top">
+        <nav class="nav container" aria-label="Main navigation">
+            <div class="nav-left">
+                <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+                    <span class="sr-only">Open navigation menu</span>
+                    <span></span><span></span><span></span>
+                </button>
 
-        <p>
-            <a href="https://github.com/tcminhng">GitHub</a>
-            |
-            <a href="https://www.linkedin.com/in/minhtcnguyen/">LinkedIn</a>
-        </p>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+
+            <div class="social-links" aria-label="Social and contact links">
+                <a href="https://github.com/tcminhng" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                    <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.58 2 12.23c0 4.52 2.87 8.35 6.84 9.71.5.09.68-.22.68-.49 0-.24-.01-1.05-.01-1.91-2.78.62-3.37-1.21-3.37-1.21-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.57 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.3 9.3 0 0 1 12 6.95a9.3 9.3 0 0 1 2.5.35c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.95.68 1.92 0 1.38-.01 2.49-.01 2.83 0 .27.18.59.69.49A10.24 10.24 0 0 0 22 12.23C22 6.58 17.52 2 12 2Z"/></svg>
+                </a>
+                <a href="http://linkedin.com/in/minhtcnguyen" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+                    <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5.2 7.8H1.8V22h3.4V7.8ZM3.5 2A2 2 0 1 0 3.5 6a2 2 0 0 0 0-4ZM22 13.9c0-4.3-2.3-6.3-5.4-6.3-2.5 0-3.6 1.4-4.2 2.3V7.8H9V22h3.4v-7c0-1.8.4-3.6 2.7-3.6 2.3 0 2.3 2.1 2.3 3.8V22H22v-8.1Z"/></svg>
+                </a>
+                <a class="social-email" href="mailto:tnguy476@asu.edu">tnguy476@asu.edu</a>
+            </div>
+        </nav>
     </header>
 
-    <main>
-        <section>
-            <h2>About Me</h2>
+    <main id="main-content">
+        <!-- Hero -->
+        <section class="home-section" id="home">
+            <div class="hero section">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">Hello, welcome to my portfolio</p>
+                    <h1>Hi, I'm Minh Nguyen.</h1>
+                    <p class="hero-role">Software Developer</p>
+                    <p class="hero-intro">I am a Computer Science (Software Engineer) student at Arizona State University, interested in full-stack development, artificial intelligence, and embedded systems. I enjoy building practical software applications and learning new technologies.</p>
+                    <p class="location-line"><strong>Current location:</strong> Tempe, Arizona</p>
+                    <div class="button-group">
+                        <a class="button" href="#projects">View My Projects</a>
+                        <a class="button button-outline" href="#contact">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+            </div>
 
-            <p>
-                I am a software engineering student and developer who enjoys
-                building practical applications and learning new technologies.
-            </p>
+            <!-- About content is part of the Home section. -->
+            <div class="section home-about" id="about">
+            <div class="container">
+                <p class="eyebrow">Get to know me</p>
+                <h2>About</h2>
+                <p class="lead">I am a student and aspiring software developer who enjoys turning ideas into useful, well-structured applications. I am especially interested in software engineering, artificial intelligence, full-stack development, and embedded systems. I enjoy learning how different technologies work together and building practical applications that strengthen my problem-solving skills.</p>
+
+                <div class="education-card">
+                    <p class="card-label">Education</p>
+                    <h3>Computer Science (Software Engineer)</h3>
+                    <p>Arizona State University</p>
+                </div>
+
+                <!-- Skills are grouped here so they are easy to scan and update. -->
+                <div class="about-skills">
+                    <h3>Skills &amp; Technologies</h3>
+                    <div class="skills-grid">
+                        <article class="skill-card"><h4>Languages</h4><p>Java · Python · JavaScript · TypeScript · SQL</p></article>
+                        <article class="skill-card"><h4>Frontend</h4><p>Angular · HTML · CSS</p></article>
+                        <article class="skill-card"><h4>Backend</h4><p>Spring Boot · REST APIs</p></article>
+                        <article class="skill-card"><h4>Databases</h4><p>PostgreSQL · SQLite</p></article>
+                        <article class="skill-card"><h4>Tools</h4><p>Git · GitHub · Keycloak · Docker · Azure · Streamlit</p></article>
+                    </div>
+                </div>
+            </div>
+            </div>
         </section>
 
-        <section>
-            <h2>Projects</h2>
+        <!-- Projects -->
+        <section class="section section-alt" id="projects">
+            <div class="container">
+                <div class="section-heading">
+                    <div><h2>Projects</h2></div>
+                </div>
 
-            <h3>Hospital Management System</h3>
+                <div class="project-grid">
+                    <article class="project-card">
+                        <div class="project-content">
+                            <p class="card-label">Project</p>
+                            <h3>BUNO</h3>
+                            <p>An accessible tabletop card-game system that combines custom 3D-printed hardware, computer vision, and dual-button controls to scan and track cards. Private audio and haptic feedback help visually impaired players play independently.</p>
+                            <div class="card-actions">
+                                <a class="text-button" href="https://github.com/tcminhng/blind-uno" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+                                <a class="text-button" href="https://youtu.be/gJ1cViXSRvw" target="_blank" rel="noopener noreferrer">Watch Demo <span aria-hidden="true">↗</span></a>
+                            </div>
+                        </div>
+                        <div class="project-image project-photo">
+                            <img src="assets/images/buno-device.png" alt="BUNO prototype with a blue card-scanning enclosure, electronics, audio device, and UNO cards" loading="lazy">
+                        </div>
+                    </article>
 
-            <p>
-                A full-stack hospital platform built with Angular, Spring Boot,
-                PostgreSQL, and Keycloak. It includes appointment management,
-                role-based authentication, an AI symptom assistant, and nearby
-                hospital recommendations.
-            </p>
+                    <article class="project-card">
+                        <div class="project-content">
+                            <p class="card-label">Project</p>
+                            <h3>Smart Hydration &amp; Break Reminder Device</h3>
+                            <p>An ESP32-S3 IoT device that calculates personalized water-intake targets, tracks sedentary periods, and provides hydration and break alerts through a TFT display and NeoPixel lights. It also synchronizes data with a remote web dashboard.</p>
+                            <div class="card-actions">
+                                <a class="text-button" href="https://github.com/tcminhng/smart-hydration-break-reminder" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+                            </div>
+                        </div>
+                        <div class="project-image project-photo">
+                            <img src="assets/images/smart-hydration-device.png" alt="Smart Hydration and Break Reminder Device prototype with a display, keypad, and sensors" loading="lazy">
+                        </div>
+                    </article>
+                </div>
+            </div>
         </section>
 
-        <section>
-            <h2>Contact</h2>
-
-            <p>
-                Email:
-                <a href="mailto:tcminh.ng20@gmail.com">
-                    Ytcminh.ng20@gmail.com
-                </a>
-            </p>
+        <!-- Contact -->
+        <section class="section contact-section" id="contact">
+            <div class="container contact-card">
+                <div>
+                    <p class="eyebrow">Let's connect</p>
+                    <h2>Have an idea to discuss?</h2>
+                    <p>I am always interested in learning, collaborating, and hearing about thoughtful software projects. Feel free to reach out through one of the options below.</p>
+                </div>
+                <div class="contact-links">
+                    <p><span>Email</span><a href="mailto:tnguy476@asu.edu">tnguy476@asu.edu</a></p>
+                    <p><span>GitHub</span><a href="https://github.com/tcminhng" target="_blank" rel="noopener noreferrer">github.com/tcminhng <span aria-hidden="true">↗</span></a></p>
+                    <p><span>LinkedIn</span><a href="http://linkedin.com/in/minhtcnguyen" target="_blank" rel="noopener noreferrer">linkedin.com/in/minhtcnguyen <span aria-hidden="true">↗</span></a></p>
+                </div>
+            </div>
         </section>
     </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>© <span id="current-year"></span> Minh Nguyen</p>
+            <p>Built by Minh Nguyen and hosted on GitHub Pages</p>
+        </div>
+    </footer>
 </body>
 </html>
